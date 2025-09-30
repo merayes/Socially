@@ -23,7 +23,7 @@ function CreatePost() {
     try {
       const result = await createPost(content, imageUrl);
       console.log("createPost result:", result); // Debug için bak
-      if (result.success) {
+      if (result?.success) {
         setContent("");
         setImageUrl("");
         setShowImageUpload(false);
